@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS produtos (
                ''')
 
 
-link = 'file:///C:/Users/pablo/Downloads/estudo/pasta.py/.vscode/site.html?'
+link = 'file:///C:....'
 
 pyautogui.press('win') 
 pyautogui.write('Google Chrome') 
