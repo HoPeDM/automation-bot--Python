@@ -68,13 +68,7 @@ for linha in tabela.index:
 
 
     custo = f"{float(tabela.loc[linha, 'custo']):.2f}" 
-#tabela.loc[linha, 'custo']: Pega o valor bruto que está na célula da coluna "custo".
-# float(...): Força esse valor a ser um número decimal. Isso é fundamental para remover a notação científica (o problema da letra 'e'). Se o valor for 1e+02, o float entende que é 100.0.
-# f"...": É uma f-string. Ela permite colocar variáveis e comandos dentro de um texto usando as chaves { }.
-# :.2f: É a instrução de formatação:
-# : indica que vai começar uma regra.
-# .2 diz que você quer 2 casas decimais.
-# f diz que o número é um float (decimal)
+
     pyautogui.write(custo, interval=0.1)
     pyautogui.press('tab')  
 
@@ -84,10 +78,10 @@ for linha in tabela.index:
         pyautogui.write(obs)
     pyautogui.press('tab')
 
-    pyautogui.press('enter') # APERTA O ENTER PARA CADASTRAR O PRODUTO
+    pyautogui.press('enter') 
 
     
-    pyautogui.scroll(5000) # SCROLL PARA VOLTAR PARA O INICIO DO CADASTRO 
+    pyautogui.scroll(5000) 
 
 
    # 3. SALVAR NO BANCO DE DADOS 
